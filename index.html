@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>व्यूह (VYUH) — UPTET 2026 | Prepare • Learn • Test</title>
+<link href="https://fonts.googleapis.com/css2?family=Federo&family=Noto+Sans+Devanagari:wght@300;400;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Plus Jakarta Sans','Noto Sans Devanagari',sans-serif;background:#F5F2EB;color:#1E1E24}
+  .sf{font-family:'Federo','Noto Sans Devanagari',serif}
+  .acc-body{max-height:0;overflow:hidden;transition:max-height .45s ease}
+  .acc-body.open{max-height:3000px}
+  .hc{transition:transform .2s,box-shadow .2s}
+  .hc:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(30,30,36,.1)}
+  .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700}
+  @keyframes pulse-soft{0%,100%{opacity:1}50%{opacity:.65}}
+  .pulse{animation:pulse-soft 2s ease-in-out infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .spin{border:2px solid #444;border-top:2px solid #F5F2EB;border-radius:50%;width:20px;height:20px;animation:spin .8s linear infinite;display:inline-block}
+  nav a.nl::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#1E1E24;transition:width .3s}
+  nav a.nl:hover::after{width:100%}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#888}
+</style>
+</head>
+<body class="min-h-screen selection:bg-[#1E1E24] selection:text-[#F5F2EB]">
+
+<!-- ░░ STICKY NAV ░░ -->
+<nav class="sticky top-0 z-50 bg-[#F5F2EB]/90 backdrop-blur-sm border-b border-[#E0DCD3] py-3 px-5">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="#top" class="sf text-xl font-bold text-[#1E1E24] flex items-center gap-2">
+      व्यूह <span class="text-xs font-sans text-neutral-400 tracking-widest">UPTET 2026</span>
+    </a>
+    <div class="hidden sm:flex items-center gap-5 text-sm font-medium text-neutral-500">
+      <a href="#pillars" class="nl relative hover:text-[#1E1E24]">Prepare</a>
+      <a href="#subjects" class="nl relative hover:text-[#1E1E24]">Syllabus</a>
+      <a href="#pyqs" class="nl relative hover:text-[#1E1E24]">PYQs</a>
+      <a href="#ncert" class="nl relative hover:text-[#1E1E24]">NCERT</a>
+      <a href="#quiz" class="nl relative hover:text-[#1E1E24]">Practice</a>
+    </div>
+    <a href="https://www.upessc.up.gov.in" target="_blank"
+       class="text-xs bg-[#1E1E24] text-[#F5F2EB] px-4 py-2 rounded-full hover:bg-neutral-800 transition-all font-semibold">
+      Official ↗
+    </a>
+  </div>
+</nav>
+
+<!-- ░░ HERO ░░ -->
+<header id="top" class="border-b border-[#E0DCD3] pt-16 pb-12 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <div class="inline-block bg-[#1E1E24] text-[#F5F2EB] px-6 py-2 rounded-full text-xs sm:text-sm tracking-widest uppercase sf mb-7 shadow-sm">
+      व्यूह रचना: जयस्य मार्गः &nbsp;•&nbsp; Strategy is the path to victory
+    </div>
+    <h1 class="text-6xl sm:text-7xl font-bold tracking-tight mb-2 text-[#1E1E24]">
+      व्यूह <span class="font-light text-2xl sm:text-3xl tracking-wide block sm:inline sm:ml-2 text-neutral-500 uppercase">[ Velocity for Your Ultimate Hacks ]</span>
+    </h1>
+    <p class="text-sm sm:text-base font-semibold tracking-wider text-neutral-500 uppercase">
+      तैयारी &nbsp;•&nbsp; समझना &nbsp;•&nbsp; परखना &nbsp;|&nbsp; Prepare &nbsp;•&nbsp; Learn &nbsp;•&nbsp; Test
+    </p>
+    <!-- Countdown -->
+    <div class="mt-10 flex flex-col items-center gap-1">
+      <p class="tag">Exam: 2 · 3 · 4 July 2026 — Countdown</p>
+      <p id="cd" class="text-5xl sm:text-6xl font-bold text-[#1E1E24] pulse tracking-tight">—</p>
+      <p class="tag mt-1">days remaining &nbsp;/&nbsp; दिन शेष</p>
+    </div>
+  </div>
+</header>
+
+<!-- ░░ EXAM INTEL STRIP ░░ -->
+<div class="bg-[#1E1E24] text-[#F5F2EB] py-4 px-6">
+  <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-center">
+    <div><div class="text-[#F5A623] font-bold text-xl">150</div><div class="text-xs text-neutral-400">MCQs</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">150</div><div class="text-xs text-neutral-400">Marks</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">150 min</div><div class="text-xs text-neutral-400">Duration</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">0</div><div class="text-xs text-neutral-400">Negative Marking</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">90/150</div><div class="text-xs text-neutral-400">General Cutoff</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">82/150</div><div class="text-xs text-neutral-400">SC/ST/OBC</div></div>
+    <div class="text-neutral-700 hidden sm:block">|</div>
+    <div><div class="text-[#F5A623] font-bold text-xl">Lifetime</div><div class="text-xs text-neutral-400">Certificate</div></div>
+  </div>
+</div>
+
+<main class="max-w-6xl mx-auto px-5 py-12">
+
+  <!-- ░░ WAR ROOM INTRO ░░ -->
+  <div class="bg-[#EFECE4] rounded-2xl p-8 border border-[#E4E0D5] shadow-sm mb-12">
+    <h2 class="text-xl font-bold mb-5 flex items-center gap-2">
+      🤝 <span class="border-b-2 border-[#1E1E24] pb-1">आपका डिजिटल वॉर रूम &nbsp;/&nbsp; Your Digital War Room</span>
+    </h2>
+    <div class="grid md:grid-cols-2 gap-6 text-sm text-neutral-700 border-t border-[#E4E0D5] pt-6">
+      <div>
+        <p class="font-semibold text-[#1E1E24] mb-2">चलो बिल्कुल सच कहें—</p>
+        <p>परीक्षा क्रैक करना केवल किताबों में डूबने के बारे में नहीं है; यह पेपर को मात देने की रणनीति बनाने के बारे में है। यह कोई उबाऊ क्लासरूम नहीं है। इसे हमारा साझा वॉर रूम समझो। हमने सारा क्लटर साफ़ करके सटीक शॉर्टकट मैप कर दिए हैं। आप फोकस लाओ, हम मिलकर लक्ष्य भेदेंगे।</p>
+      </div>
+      <div class="md:border-l border-[#DCD8CD] md:pl-6">
+        <p class="font-semibold text-[#1E1E24] mb-2">Let's be completely honest—</p>
+        <p>Cracking an exam isn't just about drowning in textbooks; it's about out-strategising the paper. Think of this as our shared digital war room. We've cleared the chaotic syllabus clutter and mapped exact shortcuts. You bring your focus, and together we smash the target.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ THREE PILLARS ░░ -->
+  <section id="pillars" class="grid md:grid-cols-3 gap-6 mb-16">
+
+    <!-- PREPARE -->
+    <div class="bg-white rounded-2xl p-6 border border-[#E4E0D5] shadow-sm hc flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="tag">STEP 01</span><span class="text-2xl">🎯</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#1E1E24] mb-1">तैयारी</h3>
+        <p class="text-sm text-neutral-400 mb-4">Prepare</p>
+        <p class="text-sm text-neutral-600 mb-5">रणनीति बनाओ, शोर हटाओ, नींव तैयार करो। Lock the strategy, filter the noise, build the blueprint.</p>
+        <div class="space-y-2">
+          <a href="https://www.upessc.up.gov.in" target="_blank" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📋 Official UPESSC Website</span><span class="text-xs opacity-60">↗</span>
+          </a>
+          <a href="#subjects" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>🗺️ Full Subject Map</span><span class="text-xs opacity-60">↓</span>
+          </a>
+          <a href="#books" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📚 Best Books Arsenal</span><span class="text-xs opacity-60">↓</span>
+          </a>
+          <a href="#plan" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>🗓️ 45-Day Tour Schedule</span><span class="text-xs opacity-60">↓</span>
+          </a>
+        </div>
+      </div>
+      <p class="mt-6 pt-4 border-t border-neutral-100 text-xs text-neutral-400 italic">Focus: Strategy & Blueprints</p>
+    </div>
+
+    <!-- LEARN -->
+    <div class="bg-white rounded-2xl p-6 border border-[#E4E0D5] shadow-sm hc flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="tag">STEP 02</span><span class="text-2xl">💡</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#1E1E24] mb-1">समझना</h3>
+        <p class="text-sm text-neutral-400 mb-4">Learn</p>
+        <p class="text-sm text-neutral-600 mb-5">मेमोरी हैक्स, विजुअल ट्रिक्स, NCERT से सीधे। Memory hacks, visual tricks, straight from NCERT.</p>
+        <div class="space-y-2">
+          <a href="https://ncert.nic.in/textbook.php" target="_blank" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📗 NCERT Free Textbooks</span><span class="text-xs opacity-60">↗</span>
+          </a>
+          <a href="https://diksha.gov.in" target="_blank" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>🎓 DIKSHA Digital Content</span><span class="text-xs opacity-60">↗</span>
+          </a>
+          <a href="#ncert" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📖 Class-wise NCERT Links</span><span class="text-xs opacity-60">↓</span>
+          </a>
+          <a href="#quiz" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>🤖 AI Practice Buddy</span><span class="text-xs opacity-60">↓</span>
+          </a>
+        </div>
+      </div>
+      <p class="mt-6 pt-4 border-t border-neutral-100 text-xs text-neutral-400 italic">Focus: Concept Clarity & Hacks</p>
+    </div>
+
+    <!-- TEST -->
+    <div class="bg-white rounded-2xl p-6 border border-[#E4E0D5] shadow-sm hc flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="tag">STEP 03</span><span class="text-2xl">⚔️</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#1E1E24] mb-1">परखना</h3>
+        <p class="text-sm text-neutral-400 mb-4">Test</p>
+        <p class="text-sm text-neutral-600 mb-5">मॉक राउंड्स, टाइम्ड सिमुलेशन। Timed mock simulations to solidify speed and eliminate exam fear.</p>
+        <div class="space-y-2">
+          <a href="https://testbook.com/uptet/previous-year-papers" target="_blank" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📥 Testbook — Free PYQs</span><span class="text-xs opacity-60">↗</span>
+          </a>
+          <a href="https://www.adda247.com/teaching-jobs-exam/uptet-previous-year-question-paper/" target="_blank" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>📥 Adda247 — Year-wise Papers</span><span class="text-xs opacity-60">↗</span>
+          </a>
+          <a href="#pyqs" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>🗃️ Full PYQ Vault</span><span class="text-xs opacity-60">↓</span>
+          </a>
+          <a href="#quiz" class="flex justify-between items-center p-3 rounded-xl bg-[#F5F2EB] hover:bg-[#1E1E24] hover:text-[#F5F2EB] text-sm font-semibold transition-all border border-[#E4E0D5]">
+            <span>⚡ AI Mock Quiz</span><span class="text-xs opacity-60">↓</span>
+          </a>
+        </div>
+      </div>
+      <p class="mt-6 pt-4 border-t border-neutral-100 text-xs text-neutral-400 italic">Focus: Speed, Accuracy & Simulation</p>
+    </div>
+  </section>
+
+  <!-- ░░ SUBJECT MAP ░░ -->
+  <section id="subjects" class="mb-16">
+    <div class="flex items-baseline gap-3 mb-7">
+      <h2 class="text-3xl font-bold">विषय मानचित्र</h2>
+      <span class="text-lg text-neutral-400 font-light">/ Subject Map</span>
+    </div>
+
+    <!-- DISC 1 -->
+    <div class="flex items-center justify-between bg-[#1E1E24] text-[#F5F2EB] rounded-xl px-6 py-3 mb-4">
+      <div class="flex items-center gap-4">
+        <span class="tag" style="color:#999">◉ DISC 1</span>
+        <span class="font-bold text-sm sm:text-base">Paper I — Primary Level (Class 1–5)</span>
+      </div>
+      <span class="text-[#F5A623] font-bold text-sm">5 × 30 = 150</span>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6" id="p1grid">
+
+      <!-- CDP -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#6B35B8]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🧠</span>
+            <span class="pill bg-[#F0E6FF] text-[#6B35B8]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">बाल विकास एवं शिक्षण विधियाँ</h3>
+          <p class="text-xs text-neutral-400 mb-2">Child Development & Pedagogy</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★★ PYQ Repeat Rate</p>
+          <button onclick="tog('cdp1')" class="text-xs text-[#6B35B8] font-semibold hover:underline">+ पूरा सिलेबस / Full Syllabus</button>
+          <div id="cdp1" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#6B35B8] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ Piaget's 4 Stages of Cognitive Development</p>
+              <p>✦ Vygotsky's ZPD + Scaffolding + MKO</p>
+              <p>✦ Thorndike's 3 Laws (Readiness, Exercise, Effect)</p>
+              <p>✦ Pavlov Classical vs Skinner Operant Conditioning</p>
+              <p>✦ Inclusive Education — Braille, identification of excluded groups</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">Full Syllabus</p>
+              <p>• Child development stages: physical, mental, emotional, language, creative</p>
+              <p>• Heredity & environment factors</p>
+              <p>• Thorndike, Pavlov, Skinner, Kohler, Piaget, Vygotsky theories</p>
+              <p>• Learning curve and plateau — meaning, causes, remedies</p>
+              <p>• Teaching methods, micro-teaching, basic skills, maxims</p>
+              <p>• Inclusive education: identification, TLMs, Braille, special methods</p>
+              <p>• Guidance and counselling: meaning, types, need, scope, institutions</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#F0E6FF]">
+                <p class="font-bold text-[#6B35B8]">🎵 Earworm</p>
+                <p class="font-bold text-lg">P · V · T · P · S · K</p>
+                <p>Piaget · Vygotsky · Thorndike · Pavlov · Skinner · Kohler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindi -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#B05A00]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">📜</span>
+            <span class="pill bg-[#FFF5E0] text-[#B05A00]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">भाषा प्रथम — हिन्दी</h3>
+          <p class="text-xs text-neutral-400 mb-2">Language I — Hindi</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★★ PYQ Repeat Rate</p>
+          <button onclick="tog('hi1')" class="text-xs text-[#B05A00] font-semibold hover:underline">+ पूरा सिलेबस / Full Syllabus</button>
+          <div id="hi1" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#B05A00] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ संधि — Sandhi: 3 types (5-8 questions per paper)</p>
+              <p>✦ समास — Samas: all 6 types</p>
+              <p>✦ मुहावरे & लोकोक्तियाँ</p>
+              <p>✦ अलंकार — Alankar: 7 types</p>
+              <p>✦ तत्सम / तद्भव / देशज identification</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">Full Syllabus</p>
+              <p>• Unseen passage (अपठित अनुच्छेद)</p>
+              <p>• Hindi Varnamala, Svar, Vyanjan, Anusvar, Anunasik, Chandrabindu</p>
+              <p>• Sandhi: Svar (Dirgha/Gun/Vriddhi/Yan/Ayadi), Vyanjan, Visarg</p>
+              <p>• Samas — all 6 types with Samas Vigrah</p>
+              <p>• Alankar: Anupras, Yamak, Shlesh, Upma, Rupak, Utpreksha, Atishayokti</p>
+              <p>• Vachan, Ling, Kaal; Upsarg, Pratyay; Tatsam/Tadbhav/Deshaj</p>
+              <p>• Muhavare & Lokoktiyan; Vachya; Sangya, Sarvanam, Visheshan, Kriya</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#FFF5E0]">
+                <p class="font-bold text-[#B05A00]">🎵 Sandhi Earworm</p>
+                <p class="font-bold text-lg">S → V → Vi</p>
+                <p>Svar → Vyanjan → Visarg &nbsp;|&nbsp; DGVYA: Dirgha Gun Vriddhi Yan Ayadi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- English -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#005F8E]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🔤</span>
+            <span class="pill bg-[#E0F0FF] text-[#005F8E]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">भाषा द्वितीय — अंग्रेजी</h3>
+          <p class="text-xs text-neutral-400 mb-2">Language II — English / Urdu / Sanskrit</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★☆ PYQ Repeat Rate</p>
+          <button onclick="tog('en1')" class="text-xs text-[#005F8E] font-semibold hover:underline">+ Show Full Syllabus</button>
+          <div id="en1" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#005F8E] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ Active & Passive Voice — always 3-4 questions</p>
+              <p>✦ Parts of Speech — types and identification</p>
+              <p>✦ Tenses — all 12 forms</p>
+              <p>✦ Articles: a / an / the — rules and exceptions</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">Full Syllabus</p>
+              <p>• Unseen Passage; Sentences (kinds, subject/predicate)</p>
+              <p>• Parts of Speech: Noun (kinds), Pronoun, Adjective, Verb, Adverb, Preposition, Conjunction</p>
+              <p>• Tenses: Present/Past/Future (all 4 forms each)</p>
+              <p>• Articles; Punctuation; Word Formation; Active/Passive Voice</p>
+              <p>• Singular & Plural; Gender (4 types)</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#E0F0FF]">
+                <p class="font-bold text-[#005F8E]">🎵 Parts of Speech Earworm</p>
+                <p class="font-bold text-base">N · P · V · Adj · Adv · Pre · Con · Int</p>
+                <p>"Never Put Vegetables And Apples, Please Cook It"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maths P1 -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#1A6B30]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🔢</span>
+            <span class="pill bg-[#E0F5E8] text-[#1A6B30]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">गणित</h3>
+          <p class="text-xs text-neutral-400 mb-2">Mathematics — Paper I</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★☆ PYQ Repeat Rate</p>
+          <button onclick="tog('mt1')" class="text-xs text-[#1A6B30] font-semibold hover:underline">+ पूरा सिलेबस / Full Syllabus</button>
+          <div id="mt1" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#1A6B30] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ Percentage, Profit & Loss — 4-6 questions per paper</p>
+              <p>✦ LCM & HCF — always 2-3 questions</p>
+              <p>✦ Fractions — all 4 operations</p>
+              <p>✦ Area & Perimeter (rectangle, square, triangle, circle)</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">Full Syllabus</p>
+              <p>• Numbers: +−×÷; Place value; LCM & HCF</p>
+              <p>• Fractions & Decimals — all operations</p>
+              <p>• Unitary Method; Percentage; Profit/Loss; Simple Interest</p>
+              <p>• Geometry: angles, triangles, quadrilateral, circles</p>
+              <p>• Measurement: time, weight, capacity, length, temperature</p>
+              <p>• Area & Perimeter; Data & Graphs; Calendar; Volume; Money</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#E0F5E8]">
+                <p class="font-bold text-[#1A6B30]">🎵 Key Formulae</p>
+                <p class="font-bold">SI = PRT/100</p>
+                <p>LCM × HCF = Product of two numbers &nbsp;|&nbsp; P% = P÷CP × 100</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVS -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#B03000]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🌍</span>
+            <span class="pill bg-[#FFF0E8] text-[#B03000]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">पर्यावरणीय अध्ययन</h3>
+          <p class="text-xs text-neutral-400 mb-2">Environmental Studies — Paper I</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★☆ PYQ Repeat Rate</p>
+          <button onclick="tog('evs1')" class="text-xs text-[#B03000] font-semibold hover:underline">+ पूरा सिलेबस / Full Syllabus</button>
+          <div id="evs1" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#B03000] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ India's rivers, mountains, forests — 3-5 questions per paper</p>
+              <p>✦ Indian Constitution & Governance structure</p>
+              <p>✦ UP Geography — rivers, climate, transport</p>
+              <p>✦ Environment Day (June 5), conservation schemes</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">Full Syllabus</p>
+              <p>• Family, food, health, shelter, plants & animals, fairs, water, sports</p>
+              <p>• India: rivers, mountains, plateaus, forests, continents, oceans</p>
+              <p>• UP: rivers, climate, forests, transport routes</p>
+              <p>• Constitution; Panchayati Raj; Nagar Palika/Nigam; District administration</p>
+              <p>• Legislature, Judiciary, Executive; national symbols & festivals; voting</p>
+              <p>• Environment conservation, government schemes, social responsibility</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#FFF0E8]">
+                <p class="font-bold text-[#B03000]">🎵 Rivers of India Earworm</p>
+                <p class="font-bold">G · Y · N · B · G · K · M · C</p>
+                <p>Ganga·Yamuna·Narmada·Brahmaputra·Godavari·Krishna·Mahanadi·Cauvery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISC 2 -->
+    <div class="flex items-center justify-between bg-[#0D3728] text-[#F5F2EB] rounded-xl px-6 py-3 mb-4">
+      <div class="flex items-center gap-4">
+        <span class="tag" style="color:#999">◉ DISC 2</span>
+        <span class="font-bold text-sm sm:text-base">Paper II — Upper Primary Level (Class 6–8)</span>
+      </div>
+      <span class="text-[#48EFBD] font-bold text-sm">CDP+Hindi+Eng+60 = 150</span>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- CDP P2 -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#6B35B8]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🧩</span>
+            <span class="pill bg-[#F0E6FF] text-[#6B35B8]">30 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">बाल विकास — कक्षा 6-8 संदर्भ</h3>
+          <p class="text-xs text-neutral-400 mb-2">CDP — Upper Primary Context (Age 11–14)</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★★ PYQ Repeat Rate</p>
+          <button onclick="tog('cdp2')" class="text-xs text-[#6B35B8] font-semibold hover:underline">+ Show Syllabus</button>
+          <div id="cdp2" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p>Same core as Paper I — but questions target age group 11–14.</p>
+              <p>✦ Piaget's Formal Operational Stage (11+)</p>
+              <p>✦ Bloom's Taxonomy — all 6 levels</p>
+              <p>✦ Metacognition; intrinsic vs extrinsic motivation</p>
+              <p>✦ Critical thinking; error as learning opportunity</p>
+              <p>✦ Adolescence development; abstract reasoning</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#F0E6FF]">
+                <p class="font-bold text-[#6B35B8]">🎵 Bloom's Earworm</p>
+                <p class="font-bold">R · U · Ap · An · Ev · Cr</p>
+                <p>Remember→Understand→Apply→Analyse→Evaluate→Create</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Science/Maths P2 -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#8A7000]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🔬</span>
+            <span class="pill bg-[#FFF8E0] text-[#8A7000]">60 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">गणित एवं विज्ञान</h3>
+          <p class="text-xs text-neutral-400 mb-2">Maths & Science — for Maths/Science teachers</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★☆ PYQ Repeat Rate</p>
+          <button onclick="tog('ms2')" class="text-xs text-[#8A7000] font-semibold hover:underline">+ Show Syllabus</button>
+          <div id="ms2" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#8A7000] mb-1">★ Maths Hot Topics</p>
+              <p>✦ Algebra identities: (a+b)²=a²+2ab+b²</p>
+              <p>✦ Linear & quadratic equations</p>
+              <p>✦ Statistics: Mean, Median, Mode</p>
+              <p>✦ Mensuration: area, volume, surface area</p>
+              <p class="font-bold text-[#8A7000] mt-2 mb-1">★ Science Hot Topics</p>
+              <p>✦ Cell → Tissue → Organ → System hierarchy</p>
+              <p>✦ Photosynthesis & nutrition in plants</p>
+              <p>✦ Electric circuit: series vs parallel</p>
+              <p>✦ Acids, Bases, Salts — pH concept, litmus</p>
+              <p>✦ Greenhouse effect, ozone depletion</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#FFF8E0]">
+                <p class="font-bold text-[#8A7000]">🎵 Cell Hierarchy Earworm</p>
+                <p class="font-bold">C → T → O → S → Organism</p>
+                <p>"Carefully Teach Our Students Organically"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Studies P2 -->
+      <div class="bg-white rounded-2xl border border-[#E4E0D5] overflow-hidden shadow-sm hc">
+        <div class="h-1.5 bg-[#8E1540]"></div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🗺️</span>
+            <span class="pill bg-[#FFE8F0] text-[#8E1540]">60 MCQs</span>
+          </div>
+          <h3 class="font-bold text-[#1E1E24] text-sm mb-0.5">सामाजिक अध्ययन</h3>
+          <p class="text-xs text-neutral-400 mb-2">Social Studies — for SST teachers</p>
+          <p class="text-xs text-neutral-400 mb-3">★★★★★ PYQ Repeat Rate</p>
+          <button onclick="tog('sst2')" class="text-xs text-[#8E1540] font-semibold hover:underline">+ Show Syllabus</button>
+          <div id="sst2" class="acc-body">
+            <div class="mt-4 pt-4 border-t border-neutral-100 space-y-1 text-xs text-neutral-600">
+              <p class="font-bold text-[#8E1540] mb-1">★ PYQ Hot Topics</p>
+              <p>✦ Mughal Empire — Akbar, culture, decline</p>
+              <p>✦ Freedom Movement — 1857, Gandhi, Partition</p>
+              <p>✦ Indian Constitution — Preamble, Fundamental Rights, DPSP</p>
+              <p>✦ India Geography — soil types, climate zones, physical divisions</p>
+              <p>✦ UP in India — rivers, agriculture, industries</p>
+              <p class="font-bold text-neutral-400 mt-2 mb-1">History • Civics • Geography • EVS • PE • Music • Horticulture</p>
+              <p>• Ancient India: Vedic, Maurya, Gupta periods</p>
+              <p>• Medieval: Delhi Sultanate, Mughal Empire</p>
+              <p>• Colonial & Freedom Struggle; Challenges post-1947</p>
+              <p>• Civics: Constitution, Parliament, Panchayati Raj, Democracy</p>
+              <p>• Geography: India's physical features, UP, World natural regions</p>
+              <div class="mt-3 p-2.5 rounded-lg bg-[#FFE8F0]">
+                <p class="font-bold text-[#8E1540]">🎵 Delhi Sultanate Earworm</p>
+                <p class="font-bold">S · K · T · S · L</p>
+                <p>Slave(1206)→Khilji→Tughlaq→Sayyid→Lodi(1526) &nbsp;|&nbsp; "Some Kings Take Some Land"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PYQ VAULT ░░ -->
+  <section id="pyqs" class="mb-16">
+    <div class="flex items-baseline gap-3 mb-7">
+      <h2 class="text-3xl font-bold">PYQ वॉल्ट</h2>
+      <span class="text-lg text-neutral-400 font-light">/ Previous Year Papers</span>
+    </div>
+    <div class="bg-[#1E1E24] rounded-2xl p-8">
+      <p class="text-neutral-400 text-sm mb-6">2013–2022 के सारे पेपर मुफ्त में। Download free PYQs from verified platforms. Start with 2021 — the most recent available.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+        <a href="https://testbook.com/uptet/previous-year-papers" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#F5A623] transition-colors">Testbook</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">2013–2022 · Both papers · Answer keys included</p>
+        </a>
+        <a href="https://www.adda247.com/teaching-jobs-exam/uptet-previous-year-question-paper/" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#48EFBD] transition-colors">Adda247</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">Year-wise + shift-wise · Detailed solutions</p>
+        </a>
+        <a href="https://www.careerpower.in/uptet-previous-year-question-paper.html" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#F5A623] transition-colors">Career Power</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">Memory-based 2021 & 2022 · Most accurate recent papers</p>
+        </a>
+        <a href="https://byjusexamprep.com/tet-exams/uptet-exam-question-papers" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#48EFBD] transition-colors">BYJU's Exam Prep</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">2011, 2017, 2018, 2019, 2021 · Detailed explanations</p>
+        </a>
+        <a href="https://sarkariteachers.com/uptet-all-previous-year-papers-with-solutions/" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#F5A623] transition-colors">Sarkari Teachers</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">P1 · P2 · SST separate · All solved with explanations</p>
+        </a>
+        <a href="https://allexampyqs.com/uptet-previous-year-paper/" target="_blank"
+           class="group p-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 transition-all">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-[#F5F2EB] text-sm group-hover:text-[#48EFBD] transition-colors">AllExamPYQs</span>
+            <span class="text-xs text-neutral-500">Free ↗</span>
+          </div>
+          <p class="text-xs text-neutral-400">All years · Free PDF download · Good for offline practice</p>
+        </a>
+      </div>
+      <div class="p-4 bg-neutral-900 rounded-xl border border-neutral-700">
+        <p class="text-[#F5A623] text-xs font-bold mb-1">📌 रणनीति / Strategy Note</p>
+        <p class="text-neutral-400 text-xs">UPTET 2021 से शुरू करो (सबसे हालिया)। 150 मिनट में 150 सवाल — असली माहौल में हल करो। Start with UPTET 2021 paper under timed conditions (150 minutes). Work backwards year by year. Solve minimum 5 full papers before July 2.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ NCERT LIBRARY ░░ -->
+  <section id="ncert" class="mb-16">
+    <div class="flex items-baseline gap-3 mb-3">
+      <h2 class="text-3xl font-bold">NCERT पुस्तकालय</h2>
+      <span class="text-lg text-neutral-400 font-light">/ Free Textbook Library</span>
+    </div>
+    <p class="text-sm text-neutral-500 mb-6">UPTET के ~70% प्रश्न NCERT कक्षा 1–8 से आते हैं। ये मुफ्त हैं। ~70% of UPTET questions come directly from NCERT Class 1–8. These are free, official, and irreplaceable.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
+      <a href="https://ncert.nic.in/textbook.php" target="_blank"
+         class="col-span-2 sm:col-span-3 lg:col-span-4 flex items-center justify-between bg-[#1E1E24] text-[#F5F2EB] rounded-xl p-4 hover:bg-neutral-800 transition-all hc">
+        <div class="flex items-center gap-3"><span class="text-2xl">📚</span><div><div class="font-bold text-sm">All NCERT Books — Full Official Portal</div><div class="text-xs text-neutral-400">Class 1 to 12 · All subjects · Free PDF</div></div></div>
+        <span class="text-[#F5A623] font-bold text-sm">↗ ncert.nic.in</span>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?aa1=0-5" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📗</div><div class="font-bold text-xs">Class 1 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?ba1=0-5" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📗</div><div class="font-bold text-xs">Class 2 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?ca1=0-14" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📗</div><div class="font-bold text-xs">Class 3 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?da1=0-14" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📗</div><div class="font-bold text-xs">Class 4 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?ea1=0-14" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📘</div><div class="font-bold text-xs">Class 5 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?fmth1=0-14" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📘</div><div class="font-bold text-xs">Class 6 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?gmth1=0-15" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📘</div><div class="font-bold text-xs">Class 7 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?hmth1=0-16" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">📘</div><div class="font-bold text-xs">Class 8 — Maths</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?fesc1=0-5" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">🌿</div><div class="font-bold text-xs">Class 6 — Science</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?gesc1=0-18" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">🌿</div><div class="font-bold text-xs">Class 7 — Science</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+      <a href="https://ncert.nic.in/textbook.php?hesc1=0-18" target="_blank" class="bg-white rounded-xl p-4 border border-[#E4E0D5] hover:bg-[#1E1E24] hover:text-[#F5F2EB] transition-all hc group">
+        <div class="text-xl mb-1">🌿</div><div class="font-bold text-xs">Class 8 — Science</div><div class="text-xs text-neutral-400 group-hover:text-neutral-300 mt-0.5">NCERT PDF ↗</div>
+      </a>
+    </div>
+    <div class="bg-[#EFECE4] rounded-xl p-6 border border-[#E4E0D5]">
+      <h3 class="font-bold text-sm text-[#1E1E24] mb-4">और ज़रूरी किताबें / Other Essential Books</h3>
+      <div class="grid sm:grid-cols-2 gap-2 text-sm">
+        <a href="https://ncert.nic.in/textbook.php?fess1=0-8" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🗺️ <span class="text-[#005F8E] hover:underline">Class 6 — Social Science ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?gess1=0-9" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🗺️ <span class="text-[#005F8E] hover:underline">Class 7 — Social Science ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?hess1=0-9" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🗺️ <span class="text-[#005F8E] hover:underline">Class 8 — Social Science ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?ceep1=0-27" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🌍 <span class="text-[#005F8E] hover:underline">Class 3 — EVS (Aas Paas) ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?deep1=0-27" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🌍 <span class="text-[#005F8E] hover:underline">Class 4 — EVS (Aas Paas) ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?eeep1=0-27" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🌍 <span class="text-[#005F8E] hover:underline">Class 5 — EVS (Aas Paas) ↗</span></a>
+        <a href="https://ncert.nic.in/textbook.php?ahhe1=0-15" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">📜 <span class="text-[#005F8E] hover:underline">Class 8 — Hindi Vasant ↗</span></a>
+        <a href="https://diksha.gov.in" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-all">🎓 <span class="text-[#005F8E] hover:underline">DIKSHA — All Digital Content ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BEST BOOKS ░░ -->
+  <section id="books" class="mb-16">
+    <div class="flex items-baseline gap-3 mb-6">
+      <h2 class="text-3xl font-bold">शस्त्रागार</h2>
+      <span class="text-lg text-neutral-400 font-light">/ Best Books Arsenal</span>
+    </div>
+    <div class="overflow-x-auto rounded-2xl border border-[#E4E0D5] shadow-sm">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-[#1E1E24] text-[#F5F2EB]">
+            <th class="text-left p-4 tag text-neutral-400">Subject</th>
+            <th class="text-left p-4 tag text-neutral-400">Book / Author</th>
+            <th class="text-left p-4 tag text-neutral-400 hidden sm:table-cell">Why This Book</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-[#E4E0D5] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#F0E6FF] text-[#6B35B8]">CDP</span></td><td class="p-4 font-medium">Arihant — CTET & TETs Child Development & Pedagogy</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Best coverage of theory + PYQ-based MCQs</td></tr>
+          <tr class="border-b border-[#E4E0D5] bg-[#FAFAF8] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#F0E6FF] text-[#6B35B8]">CDP</span></td><td class="p-4 font-medium">Kiran Prakashan — UPTET Child Development</td><td class="p-4 text-neutral-400 hidden sm:table-cell">High-volume practice; best for drilling</td></tr>
+          <tr class="border-b border-[#E4E0D5] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#FFF5E0] text-[#B05A00]">Hindi</span></td><td class="p-4 font-medium">Lucent's Samanya Hindi</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Benchmark for grammar + vocabulary</td></tr>
+          <tr class="border-b border-[#E4E0D5] bg-[#FAFAF8] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#FFF5E0] text-[#B05A00]">Hindi</span></td><td class="p-4 font-medium">Examcart UPTET Hindi Book 2026</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Theory + solved papers with explanations</td></tr>
+          <tr class="border-b border-[#E4E0D5] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#E0F0FF] text-[#005F8E]">English</span></td><td class="p-4 font-medium">SP Bakshi — Objective General English (Arihant)</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Grammar drills + large MCQ bank</td></tr>
+          <tr class="border-b border-[#E4E0D5] bg-[#FAFAF8] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#E0F5E8] text-[#1A6B30]">Maths</span></td><td class="p-4 font-medium">RS Aggarwal — Quantitative Aptitude</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Arithmetic + word problems; massive bank</td></tr>
+          <tr class="border-b border-[#E4E0D5] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#FFF0E8] text-[#B03000]">EVS</span></td><td class="p-4 font-medium">Arihant / Wiley — EVS and Pedagogy</td><td class="p-4 text-neutral-400 hidden sm:table-cell">EVS concepts + integrated teaching methods</td></tr>
+          <tr class="border-b border-[#E4E0D5] bg-[#FAFAF8] hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-[#FFE8F0] text-[#8E1540]">SST P2</span></td><td class="p-4 font-medium">Examcart UPTET P2 SST — Prateek Shivalik 2026</td><td class="p-4 text-neutral-400 hidden sm:table-cell">1850+ practice questions; chapter-wise theory</td></tr>
+          <tr class="hover:bg-[#EFECE4] transition-all"><td class="p-4"><span class="pill bg-neutral-200 text-neutral-600">PYQs</span></td><td class="p-4 font-medium">Arihant UPTET Solved Papers (Paper I & II)</td><td class="p-4 text-neutral-400 hidden sm:table-cell">Trend analysis; repeated question patterns</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-neutral-400 mt-3 italic">★ Golden Rule: NCERT Class 1–8 पहले पढ़ो — ~70% questions NCERT-based हैं। Use these books as supplement.</p>
+  </section>
+
+  <!-- ░░ STUDY PLAN ░░ -->
+  <section id="plan" class="mb-16">
+    <div class="flex items-baseline gap-3 mb-6">
+      <h2 class="text-3xl font-bold">45-दिन का प्लान</h2>
+      <span class="text-lg text-neutral-400 font-light">/ Tour Schedule</span>
+    </div>
+    <div class="space-y-3">
+      <div class="flex gap-4 bg-white rounded-xl p-5 border border-[#E4E0D5] hc">
+        <div class="flex-shrink-0 w-14 h-14 bg-[#B03000] rounded-xl flex flex-col items-center justify-center text-white">
+          <div class="text-xs font-bold">PH.</div><div class="text-2xl font-bold">1</div>
+        </div>
+        <div>
+          <div class="font-bold text-[#1E1E24] mb-1">Week 1–2: NCERT Foundation / NCERT नींव</div>
+          <p class="text-sm text-neutral-500">Read all relevant NCERT Class 1–8. No shortcuts — 70% questions base. One subject per day, 4–5 hrs. NCERT पहले पढ़ो, बाकी बाद में।</p>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-white rounded-xl p-5 border border-[#E4E0D5] hc">
+        <div class="flex-shrink-0 w-14 h-14 bg-[#B05A00] rounded-xl flex flex-col items-center justify-center text-white">
+          <div class="text-xs font-bold">PH.</div><div class="text-2xl font-bold">2</div>
+        </div>
+        <div>
+          <div class="font-bold text-[#1E1E24] mb-1">Week 3–4: Subject Book Deep Dive / विषय गहराई</div>
+          <p class="text-sm text-neutral-500">Study from recommended books — CDP theories, Hindi grammar, English grammar, Maths formulae. 3–4 hrs theory + 1 hr practice daily.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-white rounded-xl p-5 border border-[#E4E0D5] hc">
+        <div class="flex-shrink-0 w-14 h-14 bg-[#1A6B30] rounded-xl flex flex-col items-center justify-center text-white">
+          <div class="text-xs font-bold">PH.</div><div class="text-2xl font-bold">3</div>
+        </div>
+        <div>
+          <div class="font-bold text-[#1E1E24] mb-1">Week 5–6: PYQ Battle Mode / PYQ अभ्यास</div>
+          <p class="text-sm text-neutral-500">Solve PYQs year-by-year (2021 first). Note repeating topics. Build your personal "Hot List". 2 full papers per week + topic drills.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-white rounded-xl p-5 border border-[#E4E0D5] hc">
+        <div class="flex-shrink-0 w-14 h-14 bg-[#6B35B8] rounded-xl flex flex-col items-center justify-center text-white">
+          <div class="text-xs font-bold">PH.</div><div class="text-2xl font-bold">4</div>
+        </div>
+        <div>
+          <div class="font-bold text-[#1E1E24] mb-1">Week 7: Full Mock Test Mode / पूरा मॉक</div>
+          <p class="text-sm text-neutral-500">1 full mock daily under real conditions (150 min + OMR simulation). Analyse errors, target weak areas. Confidence builds here.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 bg-white rounded-xl p-5 border border-[#E4E0D5] hc">
+        <div class="flex-shrink-0 w-14 h-14 bg-[#005F8E] rounded-xl flex flex-col items-center justify-center text-white">
+          <div class="text-xs font-bold">PH.</div><div class="text-2xl font-bold">5</div>
+        </div>
+        <div>
+          <div class="font-bold text-[#1E1E24] mb-1">Final Week: Rapid Revision Only / केवल दोहराना</div>
+          <p class="text-sm text-neutral-500">Zero new topics. Quick notes: formulae, theorists, dates, grammar rules. 1 mock + sleep well. You are ready. नया कुछ मत सीखो।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ AI QUIZ — MERA PITARA ░░ -->
+  <section id="quiz" class="mb-16 bg-[#1E1E24] rounded-3xl p-8 sm:p-10 shadow-xl border border-neutral-800">
+    <span class="tag text-neutral-500 block mb-2">Custom Workspace</span>
+    <h2 class="text-3xl font-bold text-[#F5F2EB] mb-2">🔮 मेरा पिटारा &nbsp;/&nbsp; AI Practice Buddy</h2>
+    <p class="text-neutral-400 text-sm mb-8">विषय चुनो, UPTET-style MCQ पाओ। Select a subject and get an authentic UPTET exam-style question. Every answer sharpens your aim.</p>
+    <div class="grid sm:grid-cols-2 gap-6">
+
+      <!-- Quiz Panel -->
+      <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800">
+        <h3 class="tag text-neutral-400 mb-4">⚔️ Generate MCQ / प्रश्न बनाएं</h3>
+        <label class="tag text-neutral-500 block mb-2">Select Subject / विषय चुनें</label>
+        <select id="qsub" class="w-full bg-neutral-800 text-[#F5F2EB] border border-neutral-700 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-neutral-500 mb-4">
+          <option value="cdp">🧠 Child Development & Pedagogy (CDP)</option>
+          <option value="hindi">📜 Hindi Language & Grammar (हिन्दी)</option>
+          <option value="english">🔤 English Language & Grammar</option>
+          <option value="maths">🔢 Mathematics — Primary (गणित)</option>
+          <option value="evs">🌍 Environmental Studies (EVS)</option>
+          <option value="science">🔬 Science — Upper Primary (विज्ञान)</option>
+          <option value="social">🗺️ Social Studies — Upper Primary (सामाजिक)</option>
+        </select>
+        <button id="genbtn" onclick="genQ()"
+          class="w-full bg-[#F5F2EB] text-[#1E1E24] font-bold py-3 rounded-xl text-sm hover:bg-[#F5A623] transition-all">
+          ⚡ Generate Question / प्रश्न बनाएं
+        </button>
+        <div id="loadarea" class="hidden mt-6 text-center py-4">
+          <div class="spin mx-auto mb-2"></div>
+          <p class="text-xs text-neutral-400">Generating question...</p>
+        </div>
+        <div id="qarea" class="hidden mt-6">
+          <p class="tag text-neutral-500 mb-2">Question / प्रश्न</p>
+          <p id="qtext" class="text-[#F5F2EB] text-sm font-medium mb-4 leading-relaxed"></p>
+          <div id="opts" class="space-y-2"></div>
+          <div id="expbox" class="hidden mt-4 p-4 bg-neutral-800 rounded-xl border border-neutral-700">
+            <p class="tag text-neutral-500 mb-1">Explanation / व्याख्या</p>
+            <p id="exptext" class="text-sm text-[#F5F2EB] leading-relaxed"></p>
+          </div>
+          <button id="nextbtn" onclick="genQ()" class="hidden mt-4 w-full border border-neutral-700 text-neutral-400 py-2 rounded-xl text-xs hover:bg-neutral-800 transition-all">
+            → Next Question / अगला प्रश्न
+          </button>
+        </div>
+      </div>
+
+      <!-- Score Panel -->
+      <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 flex flex-col">
+        <h3 class="tag text-neutral-400 mb-5">📊 Score Board / स्कोर</h3>
+        <div class="space-y-3 flex-1">
+          <div class="flex items-center justify-between p-3 rounded-xl bg-neutral-800">
+            <span class="text-xs text-neutral-400">Attempted / प्रयास</span>
+            <span id="sattempt" class="text-white font-bold text-lg">0</span>
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl bg-neutral-800">
+            <span class="text-xs text-neutral-400">Correct / सही ✓</span>
+            <span id="scorrect" class="text-[#48EFBD] font-bold text-lg">0</span>
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl bg-neutral-800">
+            <span class="text-xs text-neutral-400">Accuracy / सटीकता</span>
+            <span id="sacc" class="text-[#F5A623] font-bold text-lg">—</span>
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl bg-neutral-800">
+            <span class="text-xs text-neutral-400">Exam Target (General)</span>
+            <span class="text-white font-bold">90 / 150</span>
+          </div>
+        </div>
+        <button onclick="resetS()" class="mt-4 w-full text-xs text-neutral-600 hover:text-neutral-400 transition-all py-2">
+          Reset / रीसेट करें
+        </button>
+        <div class="mt-4 p-4 rounded-xl border border-neutral-800">
+          <p class="text-xs text-neutral-400 leading-relaxed">💡 No negative marking in UPTET — always answer every question, even if unsure. परीक्षा में नेगेटिव मार्किंग नहीं है — हर सवाल का जवाब दो।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="mb-10 bg-[#EFECE4] rounded-2xl p-8 border border-[#E4E0D5]">
+    <h2 class="font-bold text-[#1E1E24] text-xl mb-5">📞 सहायता केंद्र &nbsp;/&nbsp; Helpline</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+      <div class="bg-white p-4 rounded-xl border border-[#E4E0D5]">
+        <div class="font-bold text-[#1E1E24] mb-2">Technical / App Issues</div>
+        <a href="tel:+919899677276" class="text-[#005F8E] font-mono block">+91-9899677276</a>
+        <div class="text-xs text-neutral-400 mt-1">Mon–Sat, 9 AM – 6 PM</div>
+        <a href="mailto:uptet.support@upessc.org" class="text-xs text-[#005F8E] block mt-1">uptet.support@upessc.org</a>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-[#E4E0D5]">
+        <div class="font-bold text-[#1E1E24] mb-2">UPESSC Commission</div>
+        <a href="tel:05322465630" class="text-[#005F8E] font-mono block">0532-2465630</a>
+        <a href="tel:05322466851" class="text-[#005F8E] font-mono block">0532-2466851</a>
+        <div class="text-xs text-neutral-400 mt-1">Mon–Sat, 10 AM – 5 PM</div>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-[#E4E0D5]">
+        <div class="font-bold text-[#1E1E24] mb-2">SBI Bank (Payment)</div>
+        <a href="tel:02265361671" class="text-[#005F8E] font-mono block">022-65361671</a>
+        <div class="text-xs text-neutral-400 mt-1">24 × 7</div>
+        <a href="mailto:sbiepay@sbi.co.in" class="text-xs text-[#005F8E] block mt-1">sbiepay@sbi.co.in</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="text-center py-8 text-xs text-neutral-400 border-t border-[#E0DCD3] mx-6">
+  <p class="sf text-sm text-neutral-500 mb-1">व्यूह रचना: जयस्य मार्गः</p>
+  <p>No classroom pressure. Just a reliable companion and a solid strategy blueprint.</p>
+  <p class="mt-2 font-semibold text-neutral-400">
+    व्यूह (VYUH) © 2026 &nbsp;•&nbsp; UPTET 2026 Aspirants &nbsp;•&nbsp;
+    <a href="https://www.upessc.up.gov.in" target="_blank" class="text-[#005F8E] hover:underline">Official: upessc.up.gov.in ↗</a>
+  </p>
+  <p class="mt-1 text-neutral-300">All PYQ links are external third-party sites. We do not host question papers.</p>
+</footer>
+
+<script>
+// ── COUNTDOWN ─────────────────────────────────────────────────────
+function updateCd(){
+  const t=new Date('2026-07-02T00:00:00+05:30');
+  const d=Math.max(0,Math.floor((t-new Date())/(864e5)));
+  document.getElementById('cd').textContent=d+' days';
+}
+updateCd();setInterval(updateCd,6e4);
+
+// ── ACCORDION ─────────────────────────────────────────────────────
+function tog(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('open');
+  const btn=el.previousElementSibling;
+  if(btn&&btn.tagName==='BUTTON'){
+    const open=el.classList.contains('open');
+    btn.textContent=open
+      ?'− सिलेबस छुपाएं / Hide Syllabus'
+      :btn.textContent.includes('Show')?'+ Show Full Syllabus':'+ पूरा सिलेबस / Full Syllabus';
+  }
+}
+
+// ── SCORE ─────────────────────────────────────────────────────────
+let sc={a:0,c:0};
+function updateSc(){
+  document.getElementById('sattempt').textContent=sc.a;
+  document.getElementById('scorrect').textContent=sc.c;
+  document.getElementById('sacc').textContent=sc.a>0?Math.round(sc.c/sc.a*100)+'%':'—';
+}
+function resetS(){sc={a:0,c:0};updateSc();}
+
+// ── QUIZ ──────────────────────────────────────────────────────────
+let curAns='',answered=false;
+const subMap={
+  cdp:'Child Development & Pedagogy (CDP) for UPTET — theories like Piaget, Vygotsky, Thorndike, Skinner, Pavlov, inclusive education, learning curve, guidance and counselling',
+  hindi:'Hindi Language & Grammar (हिन्दी भाषा) for UPTET — Sandhi, Samas, Alankar, Muhavare, Tatsam/Tadbhav, Ling, Vachan, Kaal, Upsarg, Pratyay',
+  english:'English Language & Grammar for UPTET — Parts of speech, tenses, active/passive voice, articles, narration, prepositions',
+  maths:'Mathematics for Primary Level (Class 1-5) UPTET Paper I — LCM, HCF, fractions, percentage, profit/loss, simple interest, area, perimeter',
+  evs:'Environmental Studies (EVS) for UPTET Paper I — India geography, rivers, mountains, Constitution, Panchayati Raj, environment conservation, UP geography',
+  science:'Science for Upper Primary (Class 6-8) UPTET Paper II — cell biology, nutrition, photosynthesis, electricity, force, acids/bases, environment',
+  social:'Social Studies for Upper Primary UPTET Paper II — History (Maurya/Gupta/Mughal/Delhi Sultanate/Freedom Struggle), Civics (Constitution, Parliament), Geography (India/UP/World)'
+};
+
+async function genQ(){
+  const sub=document.getElementById('qsub').value;
+  const btn=document.getElementById('genbtn');
+  const ql=document.getElementById('loadarea');
+  const qa=document.getElementById('qarea');
+  qa.classList.add('hidden');ql.classList.remove('hidden');
+  btn.disabled=true;btn.textContent='...generating';answered=false;
+
+  const prompt=`Generate exactly ONE UPTET exam-style MCQ question on: ${subMap[sub]}.
+
+Respond ONLY in this JSON format, no extra text:
+{"question":"Question text in Hindi and/or English (bilingual preferred)","options":["A) text","B) text","C) text","D) text"],"correct":"A","explanation":"Brief explanation 1-2 sentences why this is correct"}
+
+Make it authentic UPTET difficulty. Focus on commonly tested concepts.`;
+
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:600,messages:[{role:'user',content:prompt}]})
+    });
+    const d=await r.json();
+    let txt=d.content[0].text.trim().replace(/```json\n?/g,'').replace(/```\n?/g,'').trim();
+    const p=JSON.parse(txt);
+    curAns=p.correct.charAt(0).toUpperCase();
+    showQ(p);
+  }catch(e){
+    showQ({
+      question:'वाइगोत्स्की के अनुसार ZPD (Zone of Proximal Development) से क्या अभिप्राय है? / According to Vygotsky, what does ZPD mean?',
+      options:['A) What a child can do alone / जो बच्चा अकेले कर सकता है','B) The gap between what a child can do alone and with guidance / अकेले और सहायता से करने की क्षमता का अंतर','C) The maximum potential of any learner','D) A child\'s emotional development zone'],
+      correct:'B',
+      explanation:'ZPD is the distance between actual development (what learner can do alone) and potential development (what they can achieve with guidance from a More Knowledgeable Other/MKO). Central to Vygotsky\'s sociocultural theory.'
+    });curAns='B';
+  } finally{
+    ql.classList.add('hidden');btn.disabled=false;btn.textContent='⚡ Generate Question / प्रश्न बनाएं';
+  }
+}
+
+function showQ(data){
+  document.getElementById('qtext').textContent=data.question;
+  const op=document.getElementById('opts');op.innerHTML='';
+  data.options.forEach(opt=>{
+    const b=document.createElement('button');
+    b.className='w-full text-left p-3 rounded-xl bg-neutral-800 border border-neutral-700 text-sm text-[#F5F2EB] hover:border-neutral-500 hover:bg-neutral-700 transition-all';
+    b.textContent=opt;
+    const l=opt.charAt(0).toUpperCase();
+    b.onclick=()=>check(l,data,b,op);
+    op.appendChild(b);
+  });
+  document.getElementById('expbox').classList.add('hidden');
+  document.getElementById('nextbtn').classList.add('hidden');
+  document.getElementById('qarea').classList.remove('hidden');
+}
+
+function check(chosen,data,btn,op){
+  if(answered)return;answered=true;sc.a++;
+  const ok=chosen===curAns;if(ok)sc.c++;updateSc();
+  op.querySelectorAll('button').forEach(b=>{
+    b.disabled=true;
+    const l=b.textContent.charAt(0).toUpperCase();
+    if(l===curAns)b.className='w-full text-left p-3 rounded-xl border text-sm font-bold bg-green-900 border-green-600 text-green-300';
+    else if(l===chosen&&!ok)b.className='w-full text-left p-3 rounded-xl border text-sm bg-red-900 border-red-600 text-red-300';
+    else b.className='w-full text-left p-3 rounded-xl border text-sm bg-neutral-800 border-neutral-700 text-neutral-500';
+  });
+  document.getElementById('exptext').textContent=(ok?'✓ Correct! ':'✗ Incorrect. ')+data.explanation;
+  document.getElementById('expbox').classList.remove('hidden');
+  document.getElementById('nextbtn').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
